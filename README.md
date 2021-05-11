@@ -8,10 +8,11 @@
   - [Model Deployed](#model-deployed)
     - [Complete methods](#complete-methods)
       - [SMT-based methods](#smt-based-methods)
+      - [MILP-based methods](#milp-based-methods)
+    - [Other complete methods](#other-complete-methods)
     - [Incomplete methods](#incomplete-methods)
-    - [Other Complete Formal Methods](#other-complete-formal-methods)
   - [Model Training](#model-training)
-    - [Data Preparation](#data-preparation)
+  - [Data Preparation](#data-preparation)
 
 # Testing Progress Report
 
@@ -38,8 +39,7 @@ In addition, we further distinguish between *Complete* and *Incomplete methods*.
 |    Narodytska et al. [120] |                                                                 | fuly-connected feed-forward |                  |                                MNIST |     TODO |
 |          Cheng et al. [30] |                                                                 | fuly-connected feed-forward |                  |                      MNIST and GTSRB |     TODO |
 
-
-### Incomplete methods
+#### MILP-based methods
 
 |             Reference |                                                  Name |                     ML model |       Activations |          Benchmark | Progress |
 | --------------------: | ----------------------------------------------------: | ---------------------------: | ----------------: | -----------------: | -------: |
@@ -48,12 +48,14 @@ In addition, we further distinguish between *Complete* and *Incomplete methods*.
 |    Brunel et al. [22] |                                                   BaB |             piecewise linear |              ReLU |            ACAS Xu |     TODO |
 |    Drutta et al. [58] | [Sherlock](https://github.com/souradeep-111/sherlock) | fully-connected feed-forward |              ReLU |                    |     TODO |
 |    Tjeng et al. [149] |   [MIPVerify](https://github.com/vtjeng/MIPVerify.jl) |             piecewise linear |              ReLU | MNIST and CIFAR-10 |     TODO |
+### Other complete methods
 
-### Other Complete Formal Methods
+### Incomplete methods
+
 
 
 ## Model Training
 
 
-### Data Preparation
+## Data Preparation
 
