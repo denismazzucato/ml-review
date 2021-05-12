@@ -13,6 +13,7 @@
     - [Incomplete methods](#incomplete-methods)
   - [Model Training](#model-training)
   - [Data Preparation](#data-preparation)
+- [Ideas:](#ideas)
 
 # Testing Progress Report
 
@@ -59,3 +60,7 @@ In addition, we further distinguish between *Complete* and *Incomplete methods*.
 
 ## Data Preparation
 
+# Ideas:
+- saving tool metadata as json and build markdown tables automatically
+- adding each tool (testable via cli) the relative container (maybe with a standard entry point), opening space for contributions directly by tool authors
+- CI workflow for building and testing containers
