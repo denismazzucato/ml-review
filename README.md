@@ -43,16 +43,16 @@ In this section, we report the tool testing status, for tools already tested we 
 
 ### SMT-based Formal Methods
 
-|           Author Reference |                                                       Tool Name |            Supported Layers |      Activations |                              Dataset | Benchmarks |
-| -------------------------: | --------------------------------------------------------------: | --------------------------: | ---------------: | -----------------------------------: | ---------: |
-| Pulina and Tacchella [126] |                                                                 | fuly-connected feed-forward |          sigmoid |                                      |            |
-|                Ehlers [60] |                    [Planet](https://github.com/progirep/planet) |            piecewise linear |             ReLU |                                MNIST |            |
-|           Katz et al. [92] |                                                        Reluplex | fuly-connected feed-forward |             ReLU |                              ACAS Xu |            |
-|           Katz et al. [93] | [Marabou](https://github.com/NeuralNetworkVerification/Marabou) |            piecewise linear | piecewise linear |                              ACAS Xu |            |
-|         Bastani et al. [8] |                                                                 |            piecewise linear |             ReLU |                   MNIST and CIFAR-10 |            |
-|          Huang et al. [86] |                          [DLV](https://github.com/verideep/dlv) |            piecewise linear |             ReLU | MNIST, CIFAR-10, GTSRB, and ImageNet |            |
-|    Narodytska et al. [120] |                                                                 |   Binarized Neural Networks |                  |                                MNIST |            |
-|          Cheng et al. [30] |                                                                 |   Binarized Neural Networks |                  |                      MNIST and GTSRB |            |
+|           Author Reference |                                                       Tool Name |            Supported Layers |      Activations |                              Dataset |  Benchmarks |
+| -------------------------: | --------------------------------------------------------------: | --------------------------: | ---------------: | -----------------------------------: | ----------: |
+| Pulina and Tacchella [126] |                                                                 | fuly-connected feed-forward |          sigmoid |                                      |             |
+|                Ehlers [60] |                    [Planet](https://github.com/progirep/planet) |            piecewise linear |             ReLU |                                MNIST | in progress |
+|           Katz et al. [92] |                                                        Reluplex | fuly-connected feed-forward |             ReLU |                              ACAS Xu |             |
+|           Katz et al. [93] | [Marabou](https://github.com/NeuralNetworkVerification/Marabou) |            piecewise linear | piecewise linear |                              ACAS Xu |             |
+|         Bastani et al. [8] |                                                                 |            piecewise linear |             ReLU |                   MNIST and CIFAR-10 |             |
+|          Huang et al. [86] |                          [DLV](https://github.com/verideep/dlv) |            piecewise linear |             ReLU | MNIST, CIFAR-10, GTSRB, and ImageNet |             |
+|    Narodytska et al. [120] |                                                                 |   Binarized Neural Networks |                  |                                MNIST |             |
+|          Cheng et al. [30] |                                                                 |   Binarized Neural Networks |                  |                      MNIST and GTSRB |             |
 
 ### MILP-based Formal Methods
 

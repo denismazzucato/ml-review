@@ -1,0 +1,41 @@
+Bootstrap: library
+From: ubuntu:18.04
+
+%post
+    apt-get update 
+    apt-get install -y build-essential libssl-dev wget git python-dev python3-dev 
+    
+    # building dependencies: git, cmake
+
+    # install cmake 3.20.3 latest (>=3.12 required)
+    mkdir /cmake
+    cd /cmake
+    wget https://cmake.org/files/v3.20/cmake-3.20.3.tar.gz
+    tar -xzvf cmake-3.20.3.tar.gz
+    cd /cmake/cmake-3.20.3/
+    ./bootstrap
+    make 
+    make install
+
+    git clone https://github.com/NeuralNetworkVerification/Marabou /marabou
+    mkdir /marabou/build
+    cd /marabou/build
+    cmake ..
+    make check
+
+%apphelp local-robustness
+    Container: Marabou (marabou.sif)
+    Banchmark: local-robustness
+    Command: 
+    > singularity run --app local_robustness marabou.sif
+
+%help
+    Note that this container is under development
+
+    Container: Marabou (marabou.sif)
+
+    Available benchmarks for Marabou
+    - local-robustness
+
+    Run benchmarks with:
+    > singularity run --app $benchmark-name marabou.sif

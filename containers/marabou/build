@@ -1,0 +1,3 @@
+ #!/bin/sh
+ 
+ sudo singularity build --force marabou.sif singularity.def
