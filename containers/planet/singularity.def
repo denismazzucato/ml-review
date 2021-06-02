@@ -1,0 +1,38 @@
+Bootstrap: library
+From: ubuntu:18.04
+
+%post
+    apt-get update 
+    apt-get install -y build-essential libssl-dev wget git python-dev python3-dev 
+    
+    # tool for translate neural network description in the prototxt format
+    mkdir /tools
+    cd /tools
+    wget https://gist.github.com/progirep/fd7d2dc120862faa984a70f503611013/raw/260e1e76cebd0ea58bf1a03b64c3f1e0002fc677/csv_to_hdf5_supervised_classification.py
+    wget https://raw.githubusercontent.com/vadimkantorov/caffemodel2json/3a8fd443bf1596dad5f517aecdef08a81bf73bfe/caffemodel2json.py
+
+    # requisites
+    cd /
+    apt-get install -y libglpk-dev qt5-qmake valgrind libltdl-dev protobuf-compiler
+
+    git clone https://github.com/progirep/planet /planet
+    cd /planet/src
+    qmake Tool.pro
+    makes
+
+%apphelp local-robustness
+    Container: PLANET (planet.sif)
+    Banchmark: local-robustness
+    Command: 
+    > singularity run --app local_robustness planet.sif
+
+%help
+    Note that this container is under development
+
+    Container: PLANET (planet.sif)
+
+    Available benchmarks for PLANET
+    - local-robustness
+
+    Run benchmarks with:
+    > singularity run --app $benchmark-name planet.sif

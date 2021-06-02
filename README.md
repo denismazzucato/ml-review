@@ -48,7 +48,7 @@ In this section, we report the tool testing status, for tools already tested we 
 | Pulina and Tacchella [126] |                                                                 | fuly-connected feed-forward |          sigmoid |                                      |             |
 |                Ehlers [60] |                    [Planet](https://github.com/progirep/planet) |            piecewise linear |             ReLU |                                MNIST | in progress |
 |           Katz et al. [92] |                                                        Reluplex | fuly-connected feed-forward |             ReLU |                              ACAS Xu |             |
-|           Katz et al. [93] | [Marabou](https://github.com/NeuralNetworkVerification/Marabou) |            piecewise linear | piecewise linear |                              ACAS Xu |             |
+|           Katz et al. [93] | [Marabou](https://github.com/NeuralNetworkVerification/Marabou) |            piecewise linear | piecewise linear |                              ACAS Xu | in progress |
 |         Bastani et al. [8] |                                                                 |            piecewise linear |             ReLU |                   MNIST and CIFAR-10 |             |
 |          Huang et al. [86] |                          [DLV](https://github.com/verideep/dlv) |            piecewise linear |             ReLU | MNIST, CIFAR-10, GTSRB, and ImageNet |             |
 |    Narodytska et al. [120] |                                                                 |   Binarized Neural Networks |                  |                                MNIST |             |
